@@ -13,18 +13,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
     h1.textContent = "Hello World!";
     app.appendChild(h1);
     // creo un div
-    const divCard = documen.createElement("div");
-    divCard.id = "card";
-    divCard.classList.add("principal card");
-    // creo un parrafo
-    const p = document.createElement("p");
-    p.textContent = "Hola soy un parrafo";
-    divCard.appendChild(p);
-    // creo un boton
-    const mensajeBtn = document.createElement("button");
-    mensajeBtn.textContent = "Mostrar Mensaje";
-    divCard.appendChild(mensajeBtn);
+
+    // divCard.appendChild(mensajeBtn);
 
     app.appendChild(divCard)
 
-})
+});
+const divCard = documen.createElement("div");
+divCard.id = "card";
+divCard.classList.add("principal card");
+// creo un parrafo
+const p = document.createElement("p");
+p.textContent = "Hola soy un parrafo";
+divCard.appendChild(p);
+// creo un boton
+const mensajeBtn = document.createElement("button");
+mensajeBtn.textContent = "Mostrar Mensaje";
